@@ -62,12 +62,16 @@ def problem4():
 
 # Create a function that will have a hard coded array then ask the user for a number. Use the userInput to state how many numbers in an array are higher, lower, or equal to it.
 def problem5():
-    arr = {1,2,3,4,5}
-    # userInput= int(input("Enter a number between 1 & 5"))
+    arr = [1,2,3,4,5]
+    userInput= int(input("Enter a number between 1 & 5 "))
     for eachEl in range(0,len(arr)):
-        print(arr[eachEl])
-    # if  > userInput:
-    #     print(arr[eachEl])
+        # print(arr[eachEl])
+        if arr[eachEl] > userInput:
+            print(arr[eachEl])
+        elif arr[eachEl] < userInput:
+            print(arr[eachEl]<userInput)
+        elif arr[eachEl] == userInput:
+            print(arr[eachEl]==userInput)
 
 
 
